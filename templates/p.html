@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}Note POS{% endblock %}
+{% block main %}
+<h1>Note POS</h1>
+<form method="POST" action="/p">
+    <p><b>Content:</b></p>
+    <textarea name="c" cols="30" rows="10" style="padding: .5em;"></textarea>
+    <p>
+        <button type="button" onclick="document.getElementsByTagName('textarea')[0].value='';">CLEAR</button> 
+        <button type="submit">PRINT</button>
+    </p>
+</form>
+{% endblock %}
