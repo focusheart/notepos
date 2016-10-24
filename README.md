@@ -41,6 +41,11 @@ I have already wrapper this command in `run.sh`:
 
 Once the server is started, open a browser on your desktop or cell phone,
 goto http://192.168.1.102:51023/, write some and press PRINT button.
+
 Or, you can run the following command to open a GUI on your desktop,
 I have tested on Windows, MacOS and Ubuntu and it works on all of them.
 It is ugly, but works. I will try to make it better looking.
+
+    $ python guiclient.py
+
+Write something and press the PRINT button.
