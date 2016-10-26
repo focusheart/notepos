@@ -31,13 +31,13 @@ def p():
         return render_template('p.html')
 
     c_encoded = c.encode('gbk')
-    open(LP_PATH, 'w').write(c_encoded)
-    open(LP_PATH, 'w').write('\n'*5)
+    open(LP_PATH, 'w').write(c_encoded + '\n'*5)
     
     if r=='json':
         return jsonify({'success':True})
     else:
-        return 'OK, <a href="javascript:history.go(-1);">Go Back</a>'
+        return render_template('r.html')
+
 
 if __name__ == '__main__':
     app.run(host=HOST, port=PORT)

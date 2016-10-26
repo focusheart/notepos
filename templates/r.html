@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Note POS{% endblock %}
+{% block main %}
+<p><b>Done printing!</b></p>
+<p>Come back to previous page in 4 seconds...</p>
+<p>Or, click <a href="javascript:history.go(-1);"><b> HERE </b></a></p>
+<script>
+setTimeout('history.go(-1);', 4000);
+</script>
+{% endblock %}
