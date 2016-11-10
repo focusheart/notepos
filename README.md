@@ -12,19 +12,36 @@ Have fun!
 There are several dependency packages:
 
 * flask
-* requests
-* Tkinter
-* tkFont
-* gunicorn(optional)
+* gunicorn(optional, but recommended)
+* requests (optional)
+* Tkinter (optional)
+* tkFont (optional)
 
 And, a USB thermal printer (supporting ESC/POS is better).
 I bought a cheap one on Taobao at about $13, which is good enough.
+The optional packages were used in the GUI client,
+which means you can ignore these optional packages if you use web page only.
+
+Installing dependency packages is quite easy on RPi:
+
+    $ sudo apt-get install python-flask gunicorn
+    
+Other packages can also be installed by `apt-get`.
 
 ## Usage
 
 Switch to root user (this is required for accessing thermal printer),
 you can change the `LP_HOST` & `LP_PORT` in `server.py` according to your case.
 The default values, `192.168.1.102` and `51023`, were used in my place.
+
+Most importantly, you MUST check the printer's path:
+
+    $ ls /dev/usb/
+    
+If the `lp0` exists, you can start the server now.
+Otherwise, if `lp1` or other number exists, 
+which means your thermal printer location is different than default,
+you should change the `LP_PATH` in `server.py` as it is in `/dev/usb/`.
 
 Start this program using flask internal webserver Werkzeug:
     
