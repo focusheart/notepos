@@ -2,7 +2,8 @@
 
 ## Introduction
 
-A program for thermal printer on Raspberry Pi (and maybe other Linux systems).
+A program for thermal printer on Raspberry Pi 
+(I have tested on RPi models `1 B`, `2 B+` , `3 B` . Maybe other Linux systems work too).
 I wrapped the printer(/dev/usb/lp0) and provided interface on HTTP.
 Meanwhile, a GUI and a web page were provided for using interface.
 Have fun!
