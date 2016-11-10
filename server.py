@@ -25,6 +25,11 @@ def index():
 def p():
     c = request.form.get('c')
     r = request.form.get('r')
+
+    print '***** Received Content *****'
+    print c
+    print '\n'*3
+
     if c is None:
         c = request.args.get('c')
     if c is None:
