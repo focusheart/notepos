@@ -27,6 +27,7 @@ def p():
     r = request.form.get('r')
 
     print '***** Received Content *****'
+    print '***** From: %s' % request.remote_addr
     print c
     print '\n'*3
 
