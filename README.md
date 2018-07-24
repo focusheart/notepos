@@ -67,3 +67,5 @@ It is ugly, but works. I will try to make it better looking.
     $ python guiclient.py
 
 Write something and press the PRINT button.
+
+In addition, you can seed raw Hex code of ESC/POS to printer for more functions.
