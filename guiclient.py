@@ -4,7 +4,7 @@ import Tkinter as tk
 import tkFont as tkf
 import requests
 
-LP_HOST = '192.168.1.102'
+LP_HOST = 'localhost'
 LP_PORT = 51023
 LP_URI = 'http://%s:%s/p' % (LP_HOST, LP_PORT)
 
