@@ -12,6 +12,7 @@ Have fun!
 
 There are several dependency packages:
 
+* Python 2.7.x
 * flask
 * gunicorn(optional, but recommended)
 * requests (optional)
